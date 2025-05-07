@@ -92,28 +92,28 @@ export const testimonials = [
   {
     id: 2,
     name: "Adetunji Olalekan",
-    avatar: "./logos/ridobaba.jpeg",
+    avatar: "./logos/Ridobaba.jpeg",
     rating: 5,
     comment: "I never imagined studying in France could be this easy. They helped with everything—documents, deadlines, and even my visa. Thank you for making it possible!"
   },
   {
     id: 3,
     name: "Florence Gift",
-    avatar: "./logos/image2.png",
+    avatar: "./logos/Imagetwo.png",
     rating: 4.5,
     comment: "I had doubts and fears, but their encouragement and clarity changed everything. My Canadian admission went through without stress. Highly recommend their services to everyone!"
   },
   {
     id: 4,
     name: "Moses Ayoola",
-    avatar: "./logos/image4.png",
+    avatar: "./logos/Image4.png",
     rating: 4.5,
     comment: "I loved how approachable and patient they were. No pressure, just helpful advice and timely updates. Studying abroad now feels like the best decision I’ve made."
   },
   {
     id: 5,
     name: "Fabilola Mary",
-    avatar: "./logos/image3.png",
+    avatar: "./logos/Image3.png",
     rating: 4.5,
     comment: "I struggled for months applying alone, but their support changed everything. They helped me land a great job in Germany. I finally feel hopeful and settled."
   },

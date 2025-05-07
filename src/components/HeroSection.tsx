@@ -2,7 +2,7 @@ import { Button } from "../components/ui/button";
 // import { Search, MapPin, Plane, Filter, Play } from "lucide-react";
 import { motion, useMotionTemplate, useMotionValue, animate } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "wouter";
 
 export default function HeroSection() {
@@ -18,8 +18,8 @@ export default function HeroSection() {
     });
   }, []);
 
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
+  // const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
+  // const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   return (
     <section className="relative bg-gray-100 overflow-hidden h-[75vh]">
@@ -83,7 +83,7 @@ export default function HeroSection() {
             whileTap={{
               scale: 0.985,
             }}
-              className="flex w-fit items-center gap-1.5 rounded-sm bg-primary px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 uppercase font-semibold group text-sm"
+              className="flex w-fit items-center gap-1.5 rounded-sm bg-blue-400 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50 uppercase font-semibold group text-sm"
             >
               Start Your Journey
               <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />

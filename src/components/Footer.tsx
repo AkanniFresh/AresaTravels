@@ -197,7 +197,7 @@ export default function Footer() {
                 >
                   <Button 
                     type="submit" 
-                    className="bg-primary hover:bg-primary/90 text-white px-4 py-3 rounded-r-md"
+                    className="bg-blue-400 hover:bg-blue-400/90 text-white px-4 py-3 rounded-r-md"
                   >
                     <Send className="h-5 w-5" />
                   </Button>

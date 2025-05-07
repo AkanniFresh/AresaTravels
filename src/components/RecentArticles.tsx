@@ -6,6 +6,7 @@ export default function RecentArticles() {
     <section className="py-16 container mx-auto px-4">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold">Recent Articles & Posts</h2>
+        <div className="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -20,7 +21,7 @@ export default function RecentArticles() {
                 alt={article.title} 
                 className="w-full h-48 object-cover"
               />
-              <div className="absolute top-3 right-3 bg-primary text-white text-xs font-bold uppercase py-1 px-2 rounded">
+              <div className="absolute top-3 right-3 bg-blue-400 text-white text-xs font-bold uppercase py-1 px-2 rounded">
                 {article.category}
               </div>
             </div>
@@ -37,7 +38,7 @@ export default function RecentArticles() {
               </div>
               <h3 className="font-bold text-lg mb-2">{article.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{article.excerpt}</p>
-              <a href={article.href} target="_blank" className="text-primary font-medium text-sm hover:underline">Continue</a>
+              <a href={article.href} target="_blank" className="text-blue-400 font-medium text-sm hover:underline">Continue</a>
             </div>
           </div>
         ))}

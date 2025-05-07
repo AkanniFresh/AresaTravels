@@ -39,40 +39,40 @@ const MobileNavbar: React.FC = () => {
 
             {/* Menu content */}
             <nav className="mt-10 space-y-6">
-              <a href="#home" className="text-gray-600 block border-b py-3">
+              <a href="#home" className="text-gray-600 block border-b border-gray-300 py-3">
                 HOME
               </a>
               <a
                 href="#categories"
-                className="text-gray-600 block border-b py-3"
+                className="text-gray-600 block border-b border-gray-300 py-3"
                 onClick={toggleMenu}
               >
                 CATEGORIES
               </a>
               <a
                 href="#about"
-                className="text-gray-600 block border-b py-3"
+                className="text-gray-600 block border-b border-gray-300 py-3"
                 onClick={toggleMenu}
               >
                 ABOUT US
               </a>
               <a
                 href="#tours"
-                className="text-gray-600 block border-b py-3"
+                className="text-gray-600 block border-b border-gray-300 py-3"
                 onClick={toggleMenu}
               >
                 TOURS
               </a>
               <a
                 href="#testimonials"
-                className="text-gray-600 block border-b py-3"
+                className="text-gray-600 block border-b border-gray-300 py-3"
                 onClick={toggleMenu}
               >
                 TESTIMONIALS
               </a>
               <a
                 href="#blog"
-                className="text-gray-600 block border-b py-3"
+                className="text-gray-600 block border-b border-gray-300 py-3"
                 onClick={toggleMenu}
               >
                 BLOG
@@ -81,7 +81,7 @@ const MobileNavbar: React.FC = () => {
                 <a>
                   <button
                     onClick={toggleMenu}
-                    className="mt-8 bg-primary text-white font-bold py-3 px-6 rounded-md w-fit"
+                    className="mt-8 bg-blue-400 text-white font-bold py-3 px-6 rounded-md w-fit"
                   >
                     BOOK A CONSULTATION
                   </button>

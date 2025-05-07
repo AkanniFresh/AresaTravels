@@ -259,7 +259,7 @@ const FormFill = () => {
       <button
         type="submit"
         className={
-          `flex gap-2 justify-center items-center w-full bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition duration-300 ${formStatus === 'sending' ? 'opacity-50 cursor-not-allowed' : ''}`
+          `flex gap-2 justify-center items-center w-full bg-blue-400 text-white py-2 rounded-lg hover:bg-blue-400/90 transition duration-300 ${formStatus === 'sending' ? 'opacity-50 cursor-not-allowed' : ''}`
         }
       >
         {

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { testimonials } from "../data/tourData";
 import { Star, ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import QuoteLeft from "./ui/QuoteLeft";
 
 export default function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -35,7 +36,7 @@ export default function Testimonials() {
     <section className="py-16 bg-white relative overflow-hidden">
       {/* Background decoration */}
       <motion.div 
-        className="absolute -top-24 -right-24 w-48 h-48 bg-primary/10 rounded-full"
+        className="absolute -top-24 -right-24 w-48 h-48 bg-blue-400/10 rounded-full"
         animate={{ 
           scale: [1, 1.2, 1],
           opacity: [0.5, 0.8, 0.5],
@@ -68,7 +69,7 @@ export default function Testimonials() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold">What they are talking about</h2>
-          <div className="w-24 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+          <div className="w-24 h-1 bg-blue-400 mx-auto mt-4 rounded-full"></div>
         </motion.div>
         
         <div className="relative max-w-5xl mx-auto">
@@ -95,7 +96,7 @@ export default function Testimonials() {
             </motion.button>
           </div>
           
-          <div className="overflow-hidden rounded-xl">
+          <div className="overflow-hidden rounded-xl py-3.5">
             <div 
               className="flex transition-transform duration-700 ease-in-out"
               style={{
@@ -112,8 +113,10 @@ export default function Testimonials() {
                     whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
                   >
                     {/* Quote icon */}
-                    <div className="absolute -top-3 -left-3 bg-primary text-white rounded-full p-2 shadow-md">
-                      <Quote className="h-5 w-5" />
+                    <div className="absolute -top-3 -left-3 bg-blue-400 text-white rounded-full p-2 shadow-md">
+                      <div className="h-5 w-5">
+                      <QuoteLeft />
+                      </div>
                     </div>
                     
                     <div className="flex items-center mb-4">
@@ -148,7 +151,7 @@ export default function Testimonials() {
             {testimonials.map((_, index) => (
               <motion.button 
                 key={index}
-                className={`w-3 h-3 rounded-full ${currentSlide === index ? 'bg-primary' : 'bg-gray-300'}`}
+                className={`w-3 h-3 rounded-full ${currentSlide === index ? 'bg-blue-400' : 'bg-gray-300'}`}
                 aria-label={`Go to slide ${index + 1}`}
                 onClick={() => setCurrentSlide(index)}
                 whileHover={{ scale: 1.2 }}

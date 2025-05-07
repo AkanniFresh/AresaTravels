@@ -57,11 +57,11 @@ export default function AboutAdventure() {
                     <p className="text-xs text-gray-500">Travel Specialist</p>
                   </div>
                 </div>
-                <Link href="/bookingpage">
+                <Link href="/consultation">
                 <a>
                 <Button 
                   variant="outline" 
-                  className="text-primary border-primary hover:bg-primary hover:text-white"
+                  className="text-blue-400 border-blue-400 hover:bg-blue-400/90 hover:text-white"
                 >
                   Contact me
                 </Button>
@@ -74,7 +74,7 @@ export default function AboutAdventure() {
           <div className="grid grid-cols-2 gap-6">
             {stats.map((stat, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center">
-                <h3 className="text-2xl font-bold text-primary">{stat.value}</h3>
+                <h3 className="text-2xl font-bold text-blue-400">{stat.value}</h3>
                 <p className="text-sm text-gray-600">{stat.label}</p>
               </div>
             ))}
