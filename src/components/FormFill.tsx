@@ -73,7 +73,7 @@ const FormFill = () => {
               form.classList.toggle("hidden");
             }
           }}
-          className="bg-primary text-white px-4 py-2 rounded hover:bg-primary/90 transition text-sm my-6">CLOSE</button>
+          className="bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-400/90 transition text-sm my-6">Go Back Home</button>
         
         </div>
       </div>
