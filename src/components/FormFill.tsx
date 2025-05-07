@@ -1,4 +1,5 @@
 import React,{useState } from 'react'
+import { Link } from 'wouter'
 
 const FormFill = () => {
   const [formStatus, setFormStatus] = useState<'failed' | 'sending' | 'sent' | undefined>()
@@ -65,15 +66,12 @@ const FormFill = () => {
             <p className='text-gray-600'>Thank you for using our service</p>
 
           </div>
-
+          <Link href='/home'>
+          <a>
           <button
-          onClick={() => {
-            const form = document.getElementById("form-fill");
-            if (form) {
-              form.classList.toggle("hidden");
-            }
-          }}
           className="bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-400/90 transition text-sm my-6">Go Back Home</button>
+          </a>
+          </Link>
         
         </div>
       </div>
