@@ -45,10 +45,10 @@ export default function AboutAdventure() {
               
               <div className="border rounded-lg p-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gray-300 overflow-hidden">
+                  <div className="w-10 h-10 rounded-lg bg-gray-300 overflow-hidden">
                     <img 
-                      src="./logos/fotor.png" 
-                      alt="Abioye Bolarin Fresh" 
+                      src="./logos/profile2.png" 
+                      alt="Abioye Bolarin"
                       className="w-full h-full object-cover"
                     />
                   </div>
