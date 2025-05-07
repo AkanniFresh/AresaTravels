@@ -92,7 +92,7 @@ export default function TourCategories() {
         transition={{ delay: 0.5 }}
       >
         <motion.button
-          className="text-primary underline-offset-4 font-medium hover:underline"
+          className="text-blue-400 underline-offset-4 font-medium hover:underline"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
