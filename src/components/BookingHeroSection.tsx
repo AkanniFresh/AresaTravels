@@ -1,18 +1,6 @@
-// import React from 'react'
-
-// const BookingHeroSection = () => {
-//   return (
-//     <div>BookingHeroSection</div>
-//   )
-// }
-
-// export default BookingHeroSection
-
-// import { Button } from "../components/ui/button";
-// import { Search, MapPin, Plane, Filter, Play } from "lucide-react";
 import { motion, useMotionTemplate, useMotionValue, animate } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 export default function BookingHeroSection() {
   const COLORS_TOP = ["#13FFAA", "#579DF7", "#FC9F38", "#DD335C"];
@@ -34,8 +22,8 @@ export default function BookingHeroSection() {
     }) 
   }
 
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
+  // const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
+  // const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   return (
     <section className="relative bg-gray-100 overflow-hidden h-[75vh]">

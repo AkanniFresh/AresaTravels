@@ -1,16 +1,3 @@
-// import React from 'react'
-// import FormFill from './FormFill'
-
-// const ConsultationForm = () => {
-//   return (
-//     <div className='w-full h-svh bg-black'>
-//         <FormFill />
-//     </div>
-//   )
-// }
-
-// export default ConsultationForm;
-
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";

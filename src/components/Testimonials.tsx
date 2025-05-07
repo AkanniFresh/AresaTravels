@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { testimonials } from "../data/tourData";
-import { Star, ArrowLeft, ArrowRight, Quote } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { Star, ArrowLeft, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import QuoteLeft from "./ui/QuoteLeft";
 
 export default function Testimonials() {

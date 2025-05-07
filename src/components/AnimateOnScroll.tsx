@@ -1,4 +1,5 @@
-import { ReactNode, useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 interface AnimateOnScrollProps {
@@ -53,37 +54,37 @@ export default function AnimateOnScroll({
       case "fadeIn":
         return {
           hidden: { opacity: 0 },
-          visible: { 
+          visible: {
             opacity: 1,
-            transition: { duration, delay } 
-          }
+            transition: { duration, delay },
+          },
         };
       case "slideUp":
         return {
           hidden: { opacity: 0, y: 30 },
-          visible: { 
-            opacity: 1, 
+          visible: {
+            opacity: 1,
             y: 0,
-            transition: { duration, delay } 
-          }
+            transition: { duration, delay },
+          },
         };
       case "slideRight":
         return {
           hidden: { opacity: 0, x: -30 },
-          visible: { 
-            opacity: 1, 
+          visible: {
+            opacity: 1,
             x: 0,
-            transition: { duration, delay } 
-          }
+            transition: { duration, delay },
+          },
         };
       case "zoomIn":
         return {
           hidden: { opacity: 0, scale: 0.9 },
-          visible: { 
-            opacity: 1, 
+          visible: {
+            opacity: 1,
             scale: 1,
-            transition: { duration, delay } 
-          }
+            transition: { duration, delay },
+          },
         };
       case "staggered":
         return {
@@ -100,10 +101,10 @@ export default function AnimateOnScroll({
       default:
         return {
           hidden: { opacity: 0 },
-          visible: { 
+          visible: {
             opacity: 1,
-            transition: { duration, delay } 
-          }
+            transition: { duration, delay },
+          },
         };
     }
   };
@@ -113,8 +114,8 @@ export default function AnimateOnScroll({
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.3 }
-    }
+      transition: { duration: 0.3 },
+    },
   };
 
   return (
@@ -125,22 +126,22 @@ export default function AnimateOnScroll({
       animate={isVisible ? "visible" : "hidden"}
       variants={getAnimationVariants()}
     >
-      {animation === "staggered" 
-        ? <motion.div 
-            className="stagger-wrapper"
-            variants={getAnimationVariants()}
-          >
-            {Array.isArray(children) 
-              ? children.map((child, i) => (
-                  <motion.div key={i} variants={childVariants}>
-                    {child}
-                  </motion.div>
-                ))
-              : children
-            }
-          </motion.div>
-        : children
-      }
+      {animation === "staggered" ? (
+        <motion.div
+          className="stagger-wrapper"
+          variants={getAnimationVariants()}
+        >
+          {Array.isArray(children)
+            ? children.map((child, i) => (
+                <motion.div key={i} variants={childVariants}>
+                  {child}
+                </motion.div>
+              ))
+            : children}
+        </motion.div>
+      ) : (
+        children
+      )}
     </motion.div>
   );
 }

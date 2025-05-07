@@ -1,4 +1,4 @@
-import React, { FormEvent, FormEventHandler, useState } from 'react'
+import React,{useState } from 'react'
 
 const FormFill = () => {
   const [formStatus, setFormStatus] = useState<'failed' | 'sending' | 'sent' | undefined>()
@@ -182,8 +182,8 @@ const FormFill = () => {
           <option value="Work">Work</option>
           <option value="Scholarship">Scholarship</option>
           <option value="Document(s) Review">Document(s) Review</option>
-          <option value="tatement of Purpose">Statement of Purpose(SOP)</option>
-          <option value="CV Ehancement">CV Enhancement</option>
+          <option value="Statement of Purpose">Statement of Purpose(SOP)</option>
+          <option value="CV Enhancement">CV Enhancement</option>
         </select>
       </div>
       

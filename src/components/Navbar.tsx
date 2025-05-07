@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "../components/ui/button";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { setupSmoothScrolling } from "../lib/smoothScroll";
 // import FormFill from "./FormFill";
 import MobileNavbar from "./MobileNavbar";

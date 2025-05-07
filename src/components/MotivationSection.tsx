@@ -1,9 +1,8 @@
 
 // import { Button } from "../components/ui/button";
 // import { Search, MapPin, Plane, Filter, Play } from "lucide-react";
-import { motion, useMotionTemplate, useMotionValue, animate } from "framer-motion";
-import { FiArrowDown } from "react-icons/fi";
-import React, { useEffect } from "react";
+import { motion, useMotionValue, animate } from "framer-motion";
+import { useEffect } from "react";
 
 export default function MotivationSection() {
   const COLORS_TOP = ["#13FFAA", "#579DF7", "#FC9F38", "#DD335C"];
@@ -18,16 +17,9 @@ export default function MotivationSection() {
     });
   }, []);
 
-  function handleScrollDown() {
-    window.scrollBy({
-        top: 500,
-        behavior: "smooth",
-    }) 
-  }
-
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
-  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+  // const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
+  // const border = useMotionTemplate`1px solid ${color}`;
+  // const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   return (
     <section className="relative overflow-hidden h-[50vh]">
       <div className="absolute inset-0 z-0">

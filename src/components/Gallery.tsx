@@ -1,5 +1,5 @@
 import { galleryImages } from "../data/tourData";
-import { Search, ZoomIn } from "lucide-react";
+import { ZoomIn } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Gallery() {
