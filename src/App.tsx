@@ -6,6 +6,8 @@ import NotFound from "./pages/not-found";
 import Home from "./pages/Home";
 // import React, { useState } from "react";
 import ConsultationPage from "./components/ConsultationPage";
+// import TourCategories from "./components/TourCategories";
+import FullCategories from "./components/FullCategories";
 
 
 
@@ -16,6 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/home" component={Home} />
       <Route path="/consultation" component={ConsultationPage} />
+      <Route path="/fullcategories" component={FullCategories} />
       <Route component={NotFound} />
     </Switch>
     </>
