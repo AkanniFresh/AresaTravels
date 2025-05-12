@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AnimateOnScroll from "../components/AnimateOnScroll";
 import { motion } from "framer-motion";
 import FormFill from "./FormFill";
 import BookingHeroSection from "./BookingHeroSection";
 import MotivationSection from "./MotivationSection";
+import SubpageNavbar from "./SubpageNavbar";
 // import { Form } from "react-hook-form";
 
 export default function ConsultationPage() {
@@ -38,9 +38,9 @@ export default function ConsultationPage() {
 
   return (
     <div className="font-sans text-gray-900 staticBg">
-      <Navbar />
+      <SubpageNavbar />
 
-      <section id="hero" className="relative">
+      <section className="relative">
         <BookingHeroSection />
 
         <svg
@@ -59,14 +59,13 @@ export default function ConsultationPage() {
       </section>
 
       <section
-      className="bg-gray-200 px-4 py-10"
-      id="tours">
+      className="bg-gray-200 px-4 py-10">
         <AnimateOnScroll animation="fadeIn">
           <FormFill />
         </AnimateOnScroll>
       </section>
 
-      <section id="testimonials">
+      <section>
         <AnimateOnScroll animation="fadeIn">
           <MotivationSection />
         </AnimateOnScroll>
