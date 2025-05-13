@@ -218,7 +218,7 @@ const FormFill = () => {
           name="date"
           min={minDateString()}
         
-          className="w-full md:w-[230px] lg:w-[230px] border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="!w-full md:w-[230px] lg:w-[230px] border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
           required
         />
       </div>
@@ -232,7 +232,7 @@ const FormFill = () => {
           id="time"
           name="time"
          
-          className="w-full md:w-[230px] lg:w-[230px] border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="!w-full md:w-[230px] lg:w-[230px] border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
           required
         />
       </div>
