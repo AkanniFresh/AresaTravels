@@ -181,7 +181,7 @@ const FormFill = () => {
           <option value="Scholarship">Scholarship</option>
           <option value="Document(s) Review">Document(s) Review</option>
           <option value="Statement of Purpose">Statement of Purpose(SOP)</option>
-          <option value="CV Enhancement">CV Enhancement</option>
+          <option value="IELTS Prep">IELTS Preparation</option>
         </select>
       </div>
       

@@ -3,12 +3,12 @@ export const categories = [
   {
     id: 1,
     title: "Study Abroad",
-    image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "./logos/study.jpg"
   },
   {
     id: 2,
     title: "Work Abroad",
-    image: "https://images.unsplash.com/photo-1560260240-c6ef90a163a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "./logos/work.jpg"
   },
   {
     id: 3,

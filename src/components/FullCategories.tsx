@@ -12,7 +12,7 @@ const categories = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      "./logos/study.jpg",
     title: "Study Abroad",
     description:
       "Explore programs in the UK, USA, Canada & more. We guide you from application to visa.",
@@ -20,7 +20,7 @@ const categories = [
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1560260240-c6ef90a163a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      "./logos/work.jpg",
     title: "Work Abroad",
     description:
       "Discover job placements in Germany, UAE & more — legally and with full support.",
@@ -47,7 +47,7 @@ const categories = [
       "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
     title: "Family Vacation",
     description:
-      "Prep for IELTS, TOEFL, or French tests with expert guidance. Boost your confidence.",
+      "Family-friendly vacations with stress-free fun, adventure, relaxation, and lasting memories.",
   },
 ];
 
@@ -91,7 +91,7 @@ const FullCategories = () => {
             className="w-full h-full"
           >
             <img
-              src="./logos/bookingpix.jpg"
+              src="./logos/fullcatbg.jpg"
               alt="Mountain view"
               className="w-full h-full object-cover"
             />
@@ -99,7 +99,7 @@ const FullCategories = () => {
           <div className="absolute inset-0 bg-black opacity-80"></div>
         </div>
 
-        <div className="container mx-auto px-4 py-16 md:py-32 relative z-10 flex flex-col justify-center items-center h-[65vh]">
+        <div className="container mx-auto px-4 py-16 md:py-32 relative z-10 flex flex-col justify-center items-center h-[75vh]">
           <motion.div
             className="max-w-2xl"
             initial={{ opacity: 0, y: 30 }}
