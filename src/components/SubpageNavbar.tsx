@@ -3,8 +3,7 @@ import { Link } from "wouter";
 import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
 import { setupSmoothScrolling } from "../lib/smoothScroll";
-// import FormFill from "./FormFill";
-import MobileNavbar from "./MobileNavbar";
+import SubpageMobileNav from "./SubPageMobileNav";
 
 export default function SubpageNavbar() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -121,7 +120,7 @@ export default function SubpageNavbar() {
             </motion.div>
 
             <button className="lg:hidden text-gray-900">
-              <MobileNavbar />
+              <SubpageMobileNav />
             </button>
           </div>
         </div>
