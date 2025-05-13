@@ -1,5 +1,6 @@
 import { categories } from "../data/tourData";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 
 export default function TourCategories() {
   const containerVariants = {
@@ -91,6 +92,8 @@ export default function TourCategories() {
         viewport={{ once: true }}
         transition={{ delay: 0.5 }}
       >
+        <Link href="/fullcategories">
+        <a>
         <motion.button
           className="text-blue-400 underline-offset-4 font-medium hover:underline"
           whileHover={{ scale: 1.05 }}
@@ -98,6 +101,8 @@ export default function TourCategories() {
         >
           Get Started
         </motion.button>
+        </a>
+        </Link>
       </motion.div>
     </section>
   );

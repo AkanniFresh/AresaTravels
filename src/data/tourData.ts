@@ -2,17 +2,17 @@
 export const categories = [
   {
     id: 1,
-    title: "Learn Beyond Borders",
+    title: "Study Abroad",
     image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
     id: 2,
-    title: "Study Diverse Perspectives",
+    title: "Work Abroad",
     image: "https://images.unsplash.com/photo-1560260240-c6ef90a163a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
     id: 3,
-    title: "Balance While You Grow",
+    title: "Scholarships",
     image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
