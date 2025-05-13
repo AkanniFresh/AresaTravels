@@ -113,7 +113,7 @@ const HowItWorks: React.FC = () => {
               >
                 <span className="absolute inset-0 bg-gray-800 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100 z-0"></span>
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-                  BOOK A CONSULTATION
+                  Get in touch
                 </span>
               </Button>
             </a>

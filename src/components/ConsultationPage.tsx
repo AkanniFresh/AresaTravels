@@ -9,6 +9,9 @@ import SubpageNavbar from "./SubpageNavbar";
 // import { Form } from "react-hook-form";
 
 export default function ConsultationPage() {
+   useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to top on route change
+  }, []);
   // Add a scroll-to-top button that appears when scrolling down
   useEffect(() => {
     // Initialize a scroll observer for animations
