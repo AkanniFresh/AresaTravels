@@ -38,7 +38,7 @@ export const fullpopularTours = [
     title: "2026 FIFA World Cup",
     description: "Experience the thrill of the 2026 FIFA World Cup across North America.",
     image: "./logos/fifa.jpg",
-    rating: 4.7,
+    rating: 4.9,
     price: 1890,
     href: "https://deeperjapan.com/tokyo"
   },
@@ -47,7 +47,7 @@ export const fullpopularTours = [
     title: "Skilled Migration Exploration",
     description: "Visit top countries welcoming skilled professionals with great migration opportunities abroad.",
     image: "./logos/skill-worker.jpg",
-    rating: 4.7,
+    rating: 4.2,
     price: 1890,
     href: "https://deeperjapan.com/tokyo"
   },
@@ -56,7 +56,7 @@ export const fullpopularTours = [
     title: "Nature & Wildlife Expeditions ",
     description: "Explore breathtaking safaris, majestic mountains, and eco-tours for nature lovers worldwide.",
     image: "./logos/wildlife.jpg",
-    rating: 4.7,
+    rating: 4.5,
     price: 1890,
     href: "https://deeperjapan.com/tokyo"
   },
