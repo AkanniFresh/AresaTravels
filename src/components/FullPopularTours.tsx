@@ -18,7 +18,7 @@ export default function FullPopularTours() {
                 className="w-full h-full"
               >
                 <img
-                  src="./logos/explorebg.jpg"
+                  src="./logos/explore.jpg"
                   alt="Mountain view"
                   className="w-full h-full object-cover"
                 />
