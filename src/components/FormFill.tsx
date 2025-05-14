@@ -178,6 +178,7 @@ const FormFill = () => {
           </option> */}
           <option value="Study">Study</option>
           <option value="Work">Work</option>
+          <option value="Tour">Tour</option>
           <option value="Scholarship">Scholarship</option>
           <option value="Document(s) Review">Document(s) Review</option>
           <option value="Statement of Purpose">Statement of Purpose(SOP)</option>

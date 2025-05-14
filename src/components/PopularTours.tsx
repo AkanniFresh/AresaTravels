@@ -61,15 +61,15 @@ export default function PopularTours() {
                   <Star className="h-4 w-4 fill-yellow-400 text-yellow-400 mr-1" />
                   <span className="text-sm">{tour.rating}</span>
                 </span>
-                <a href={tour.href} target="_blank">
+                <Link href="/consultation">
                 <motion.button 
-                  className="text-primary border border-primary px-4 py-1 rounded-full text-sm font-medium hover:bg-blue-400 hover:text-white transition-colors duration-300"
+                  className="text-primary border border-primary px-4 py-1 rounded-lg text-sm font-medium hover:bg-blue-400 hover:text-white transition-colors duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  View Details
+                  Learn More
                 </motion.button>
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
