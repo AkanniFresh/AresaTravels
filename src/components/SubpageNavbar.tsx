@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
 import { setupSmoothScrolling } from "../lib/smoothScroll";
-import SubpageMobileNav from "./SubPageMobileNav";
+import SubpageMobileNav from "./SubpageMobileNav";
+
 
 export default function SubpageNavbar() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
