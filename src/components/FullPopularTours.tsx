@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SubpageNavbar from "./SubpageNavbar";
 import Footer from "./Footer";
 import { Link } from "wouter";
+import { useEffect } from "react";
 
 export const fullpopularTours = [
   {
@@ -71,6 +72,11 @@ export const fullpopularTours = [
 ];
 
 export default function FullPopularTours() {
+
+   useEffect(() => {
+      window.scrollTo(0, 0); // Scrolls to top on route change
+    }, []);
+
   return (
     <section>
       <div className="bg-blue-50 text-center">
