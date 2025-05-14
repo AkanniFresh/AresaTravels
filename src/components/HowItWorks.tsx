@@ -45,7 +45,8 @@ const HowItWorks: React.FC = () => {
 
   return (
     <section className="max-w-2xl mx-auto px-4 py-10">
-      <h2 className="text-3xl md:text-4xl font-bold mb-8">How It Works</h2>
+      <h2 className="text-3xl md:text-4xl font-bold">How It Works</h2>
+       <div className="w-20 h-1 bg-blue-400 mx-auto mt-4 rounded-full mb-8"></div>
       <div className="space-y-4">
         {steps.map((step, index) => (
           <div

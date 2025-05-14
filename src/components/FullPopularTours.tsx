@@ -72,7 +72,7 @@ export const fullpopularTours = [
 
 export default function FullPopularTours() {
   return (
-    <div>
+    <section>
       <div className="bg-blue-50 text-center">
         <SubpageNavbar />
 
@@ -126,7 +126,7 @@ export default function FullPopularTours() {
 
       {/* End of Hero section */}
 
-      <section className="py-16 container mx-auto px-4 bg-white">
+      <div className="py-16 container mx-auto px-4 bg-white">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -198,7 +198,8 @@ export default function FullPopularTours() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </div>
+      
       <Footer />
 
       {/* Scroll to top button - fixed at bottom right */}
@@ -224,6 +225,6 @@ export default function FullPopularTours() {
           <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
       </motion.button>
-    </div>
+    </section>
   );
 }
