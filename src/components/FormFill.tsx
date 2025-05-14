@@ -229,7 +229,8 @@ const FormFill = () => {
           Time
         </label>
         <input
-          type="time"
+        placeholder='e.g 2:00 PM'
+          type="text"
           id="time"
           name="time"
          
