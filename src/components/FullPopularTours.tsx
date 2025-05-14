@@ -1,7 +1,65 @@
-import { popularTours } from "../data/tourData";
 import { Star, Heart } from "lucide-react";
 import { motion } from "framer-motion";
 import SubpageNavbar from "./SubpageNavbar";
+import Footer from "./Footer";
+
+
+export const fullpopularTours = [
+  {
+    id: 1,
+    title: "Romantic Getaway to Paris",
+    description: "Experience timeless romance and elegance in the enchanting city of Paris, the city of love.",
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    rating: 4.8,
+    price: 1250,
+    href: "https://www.raphael-hotel.com/en/page/romantic-weekend-in-paris.10354.html"
+  },
+  {
+    id: 2,
+    title: "Santorini Escape",
+    description: "Discover the pristine white buildings and blue waters of this iconic Greek island paradise.",
+    image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    rating: 4.9,
+    price: 1680,
+    href: "https://www.plumguide.com/homes/75072/santorini-escape"
+  },
+  {
+    id: 3,
+    title: "Tokyo Cultural Immersion",
+    description: "Experience ancient temples and neon-lit skyscrapers in the vibrant city of Tokyo.",
+    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    rating: 4.7,
+    price: 1890,
+    href: "https://deeperjapan.com/tokyo"
+  },
+  {
+    id: 4,
+    title: "Tokyo Cultural Immersion",
+    description: "Experience ancient temples and neon-lit skyscrapers in the vibrant city of Tokyo.",
+    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    rating: 4.7,
+    price: 1890,
+    href: "https://deeperjapan.com/tokyo"
+  },
+  {
+    id: 5,
+    title: "Tokyo Cultural Immersion",
+    description: "Experience ancient temples and neon-lit skyscrapers in the vibrant city of Tokyo.",
+    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    rating: 4.7,
+    price: 1890,
+    href: "https://deeperjapan.com/tokyo"
+  },
+  {
+    id: 6,
+    title: "Tokyo Cultural Immersion",
+    description: "Experience ancient temples and neon-lit skyscrapers in the vibrant city of Tokyo.",
+    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    rating: 4.7,
+    price: 1890,
+    href: "https://deeperjapan.com/tokyo"
+  },
+];
 
 export default function FullPopularTours() {
   return (
@@ -71,7 +129,7 @@ export default function FullPopularTours() {
       </motion.div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {popularTours.map((tour, index) => (
+        {fullpopularTours.map((tour, index) => (
           <motion.div 
             key={tour.id}
             className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 relative"
@@ -99,7 +157,7 @@ export default function FullPopularTours() {
                 transition={{ duration: 0.6 }}
               />
               {/* Price badge */}
-              {/* <div className="absolute top-4 left-4 bg-primary text-white py-1 px-3 rounded-full text-sm font-bold">
+              {/* <div className="absolute top-4 left-4 bg-blue-400 text-white py-1 px-3 rounded-full text-sm font-bold">
                 ${tour.price}
               </div> */}
             </div>
@@ -128,23 +186,23 @@ export default function FullPopularTours() {
         ))}
       </div>
       
-      {/* View all tours button */}
-      {/* <motion.div
-        className="text-center mt-12"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.3 }}
-      >
-        <motion.button
-          className="bg-transparent border-2 border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-blue-400 hover:text-white transition-colors duration-300"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Explore All Tours
-        </motion.button>
-      </motion.div> */}
     </section>
+    <Footer />
+
+       {/* Scroll to top button - fixed at bottom right */}
+      <motion.button
+        className="fixed bottom-8 right-8 bg-blue-400 text-white p-3 rounded-full shadow-lg z-40 hover:bg-blue-400/80 transition-all duration-300"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </motion.button>
     </div>
   );
 }

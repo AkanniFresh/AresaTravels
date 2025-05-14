@@ -83,10 +83,12 @@ export default function SubpageNavbar() {
               ABOUT US
               <span className="absolute left-0 bottom-0 h-0.5 w-full scale-x-0 bg-blue-400 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
             </a>
-            <a href="#tours" className="relative group px-2 py-1">
+            <Link href="/fullpopulartours">
+            <a className="relative group px-2 py-1">
               TOURS
               <span className="absolute left-0 bottom-0 h-0.5 w-full scale-x-0 bg-blue-400 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
             </a>
+            </Link>
             <a href="#testimonials" className="relative group px-2 py-1">
               TESTIMONIALS
               <span className="absolute left-0 bottom-0 h-0.5 w-full scale-x-0 bg-blue-400 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
