@@ -47,7 +47,7 @@ export default function AboutAdventure() {
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-gray-300 overflow-hidden">
                     <img 
-                      src="./logos/profile2.png" 
+                      src="./logos/Profile.jpeg" 
                       alt="Abioye Bolarin"
                       className="w-full h-full object-cover"
                     />

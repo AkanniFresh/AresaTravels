@@ -88,7 +88,7 @@ export const testimonials = [
   {
     id: 1,
     name: "Wisdom Abioye",
-    avatar: "./logos/wisdom.png",
+    avatar: "./logos/wisdom.jpeg",
     rating: 5,
     comment: "The team made my UK admission journey so smooth. Their step-by-step guidance and care made me feel supported from start to finish. I’m truly grateful!"
   },
