@@ -35,7 +35,8 @@ export const popularTours = [
     description: "Experience timeless romance and elegance in the enchanting city of Paris, the city of love.",
     image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     rating: 4.8,
-    price: 1250
+    price: 1250,
+    href: "https://www.raphael-hotel.com/en/page/romantic-weekend-in-paris.10354.html"
   },
   {
     id: 2,
@@ -43,7 +44,8 @@ export const popularTours = [
     description: "Discover the pristine white buildings and blue waters of this iconic Greek island paradise.",
     image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     rating: 4.9,
-    price: 1680
+    price: 1680,
+    href: "https://www.plumguide.com/homes/75072/santorini-escape"
   },
   {
     id: 3,
@@ -51,7 +53,8 @@ export const popularTours = [
     description: "Experience ancient temples and neon-lit skyscrapers in the vibrant city of Tokyo.",
     image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     rating: 4.7,
-    price: 1890
+    price: 1890,
+    href: "https://deeperjapan.com/tokyo"
   }
 ];
 

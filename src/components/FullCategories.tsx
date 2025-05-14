@@ -50,7 +50,7 @@ const categories = [
       "./logos/practice.jpg",
     title: "Language Training",
     description:
-      "Prep for IELTS, TOEFL, or French tests with expert guidance. Boost your confidence.",
+      "Prepare for IELTS, TOEFL, or French tests with expert guidance. Boost your confidence.",
   },
 ];
 

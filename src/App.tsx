@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import ConsultationPage from "./components/ConsultationPage";
 // import TourCategories from "./components/TourCategories";
 import FullCategories from "./components/FullCategories";
+import FullPopularTours from "./components/FullPopularTours";
 
 
 
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/home" component={Home} />
       <Route path="/consultation" component={ConsultationPage} />
       <Route path="/fullcategories" component={FullCategories} />
+      <Route path="/fullpopulartours" component={FullPopularTours} />
       <Route component={NotFound} />
     </Switch>
     </>

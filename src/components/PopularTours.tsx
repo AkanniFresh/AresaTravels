@@ -1,6 +1,7 @@
 import { popularTours } from "../data/tourData";
 import { Star, Heart } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 
 export default function PopularTours() {
   return (
@@ -60,6 +61,7 @@ export default function PopularTours() {
                   <Star className="h-4 w-4 fill-yellow-400 text-yellow-400 mr-1" />
                   <span className="text-sm">{tour.rating}</span>
                 </span>
+                <a href={tour.href} target="_blank">
                 <motion.button 
                   className="text-primary border border-primary px-4 py-1 rounded-full text-sm font-medium hover:bg-blue-400 hover:text-white transition-colors duration-300"
                   whileHover={{ scale: 1.05 }}
@@ -67,6 +69,7 @@ export default function PopularTours() {
                 >
                   View Details
                 </motion.button>
+                </a>
               </div>
             </div>
           </motion.div>
@@ -81,6 +84,8 @@ export default function PopularTours() {
         viewport={{ once: true }}
         transition={{ delay: 0.3 }}
       >
+        <Link href="fullpopulartours">
+        
         <motion.button
           className="bg-transparent border-2 border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-blue-400 hover:text-white transition-colors duration-300"
           whileHover={{ scale: 1.05 }}
@@ -88,6 +93,7 @@ export default function PopularTours() {
         >
           Explore All Tours
         </motion.button>
+        </Link>
       </motion.div>
     </section>
   );
