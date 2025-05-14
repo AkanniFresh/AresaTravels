@@ -192,7 +192,7 @@ const FullCategories = () => {
         </motion.div>
       </div>
 
-      <div className="w-full bg-white">
+      <div className="w-full bg-gray-50">
         <HowItWorks />
       </div>
     

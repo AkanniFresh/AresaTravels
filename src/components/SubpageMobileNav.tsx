@@ -59,13 +59,13 @@ const SubpageMobileNav: React.FC = () => {
               >
                 ABOUT US
               </a>
+              <Link href="/fullpopulartours"  className="text-gray-600 block border-b border-gray-300 py-3">
               <a
-                href="#tours"
-                className="text-gray-600 block border-b border-gray-300 py-3"
                 onClick={toggleMenu}
               >
                 TOURS
               </a>
+              </Link>
               <a
                 href="#testimonials"
                 className="text-gray-600 block border-b border-gray-300 py-3"
