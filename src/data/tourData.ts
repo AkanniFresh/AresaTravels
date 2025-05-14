@@ -13,18 +13,18 @@ export const categories = [
   {
     id: 3,
     title: "Scholarships",
-    image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "./logos/scholarship.jpg"
   },
   {
     id: 4,
     title: "Family Vacations",
-    image: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "./logos/vacation.jpg"
   },
-  {
+   {
     id: 5,
-    title: "Explore and Educate",
-    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-  }
+    title: "Language Training",
+    image: "./logos/practice.jpg",
+  },
 ];
 
 // Popular Tours

@@ -25,29 +25,32 @@ const categories = [
     description:
       "Discover job placements in Germany, UAE & more — legally and with full support.",
   },
+
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      "./logos/scholarship.jpg",
     title: "Scholarships",
     description:
       "Browse curated scholarships that fit your goals. We help you apply successfully.",
   },
-  {
+
+   {
     id: 4,
     image:
-      "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-    title: "Language Training",
-    description:
-      "Prep for IELTS, TOEFL, or French tests with expert guidance. Boost your confidence.",
-  },
-  {
-    id: 5,
-    image:
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      "./logos/vacation.jpg",
     title: "Family Vacation",
     description:
       "Family-friendly vacations with stress-free fun, adventure, relaxation, and lasting memories.",
+  },
+
+  {
+    id: 5,
+    image:
+      "./logos/practice.jpg",
+    title: "Language Training",
+    description:
+      "Prep for IELTS, TOEFL, or French tests with expert guidance. Boost your confidence.",
   },
 ];
 
