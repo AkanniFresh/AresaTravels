@@ -195,10 +195,23 @@ const FullCategories = () => {
       <div>
         <HowItWorks />
       </div>
-
-      <div>
+    
         <Footer />
-      </div>
+
+         {/* Scroll to top button - fixed at bottom right */}
+      <motion.button
+        className="fixed bottom-8 right-8 bg-blue-400 text-white p-3 rounded-full shadow-lg z-40 hover:bg-blue-400/80 transition-all duration-300"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </motion.button>
     </section>
   );
 };
