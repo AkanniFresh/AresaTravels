@@ -5,10 +5,10 @@ import { Link } from "wouter";
 
 export default function AboutAdventure() {
   const stats = [
-    { value: "200+", label: "Successful Application" },
+    { value: "250+", label: "Successful Application" },
     { value: "350+", label: "Happy Clients" },
     { value: "150+", label: "Destinations" },
-    { value: "05+", label: "Years Experience" }
+    { value: "08+", label: "Years Experience" }
   ];
   
   return (
