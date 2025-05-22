@@ -42,13 +42,14 @@ const MobileNavbar: React.FC = () => {
               <a href="#home" className="text-gray-600 block border-b border-gray-300 py-3">
                 HOME
               </a>
+              <Link href="fullcategories">
               <a
-                href="#categories"
                 className="text-gray-600 block border-b border-gray-300 py-3"
                 onClick={toggleMenu}
               >
                 CATEGORIES
               </a>
+              </Link>
               <a
                 href="#about"
                 className="text-gray-600 block border-b border-gray-300 py-3"
@@ -56,13 +57,14 @@ const MobileNavbar: React.FC = () => {
               >
                 ABOUT US
               </a>
+              <Link href="fullpopulartours">
               <a
-                href="#tours"
                 className="text-gray-600 block border-b border-gray-300 py-3"
                 onClick={toggleMenu}
               >
                 TOURS
               </a>
+              </Link>
               <a
                 href="#testimonials"
                 className="text-gray-600 block border-b border-gray-300 py-3"
